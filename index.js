@@ -9,7 +9,7 @@ if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
 
-var options = { allowInsecureHTTP: false };
+var options = { allowInsecureHTTP: true };
 
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
