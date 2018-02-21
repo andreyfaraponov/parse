@@ -44,8 +44,7 @@ var dashboard = new ParseDashboard({
 			"user" : "admin",
 			"pass" : "1234567890"
 		}
-	],
-	"useEncryptedPasswords" : true
+	]
   }, options);
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
