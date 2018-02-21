@@ -15,7 +15,7 @@ var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'test',
-  masterKey: process.env.MASTER_KEY || 'test2', //Add your master key here. Keep it secret!
+  masterKey: process.env.MASTER_KEY || 'test_masterkey', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
@@ -27,7 +27,7 @@ var dashboard = new ParseDashboard({
 	  {
 		"serverURL": "https://test-zzz.herokuapp.com/parse",
 		"appId": "test",
-		"masterKey": "test2",
+		"masterKey": "test_masterkey",
 		"appName": "Test_Server"
 	  }
 	],
